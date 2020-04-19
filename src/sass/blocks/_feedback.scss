@@ -1,0 +1,32 @@
+.feedback   {
+    &__item {
+        margin-top: 70px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img  {
+        width: 169px;
+        height: 169px;
+    }
+    &__txt  {
+        display: block;
+        margin-left: 60px;
+    }
+    &__name {
+        color: #0d0d0d;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &__record   {
+        margin-top: 10px;
+        color: #646464;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    &__descr    {
+        margin-top: 20px;
+        color: #0d0d0d;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
