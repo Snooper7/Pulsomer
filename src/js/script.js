@@ -52,4 +52,30 @@ $(document).ready(function(){
             $('.overlay, #order').fadeIn('slow');
         });
     })
+
+    function validateForms(form){
+        $(form).validate({
+            rules:   {
+                name: "required",
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages:   {
+                name: "Пожалуйста, введите свое имя",
+                phone: "Пожалуйста, введите свой телефон",
+                email: {
+                    required: "Пожалуйста, введите свою почту",
+                    email: "Введите правильный адрес"
+                }
+            }
+        });
+    };
+
+    validateForms('#consultation-form');
+    validateForms('#consultation form');
+    validateForms('#order form');
+
 });
